@@ -1,10 +1,55 @@
-/* GLOBAL */
-
-/* input pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$" */
+/* CUSTOM PROPERTIES */
 
 :root {
-  --main-color: #3f3f3f;
+  --blue: #666ca3;
+  --black: #13183f;
+  --gray: #83869a;
+  --pink: #f74780;
+  --light-pink: #ffa7c3;
+  --white: #ffffff;
+  --gradient-1: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
+  --gradient-2: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
 }
+
+/* FONTS */
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-ExtraBold.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Medium.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Bold.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Regular.woff2") format("woff2"),
+    url("../fonts/PlusJakartaSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* GLOBAL */
 
 html {
   box-sizing: border-box;
@@ -28,12 +73,13 @@ body {
   flex-direction: column;
   height: 100%;
   background-color: #fff;
-  color: #222;
-  font-family: "Arial", sans-serif;
+  color: var(--gray);
+  font-family: "Plus Jakarta Sans", "Arial", sans-serif;
   padding: 0;
   margin: 0;
-  font-size: 16px;
-  line-height: 1.5;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
 }
 
 a {
@@ -69,36 +115,12 @@ button {
 
 .container {
   width: 100%;
-  max-width: 1200px;
+  max-width: 1210px;
   padding-left: 50px;
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
 }
-
-/* PLACEHOLDER STYLE */
-
-/* ::-webkit-input-placeholder,
-::-moz-placeholder,
-:-ms-input-placeholder,
-:-moz-placeholder {
-  color: var(--grey);
-} */
-
-/* AUTOFILL STYLES */
-
-/* input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus,
-textarea:-webkit-autofill,
-textarea:-webkit-autofill:hover,
-textarea:-webkit-autofill:focus,
-select:-webkit-autofill,
-select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
-  -webkit-text-fill-color: var(--black);
-  -webkit-box-shadow: 0 0 0px 1000px rgb(255, 255, 255) inset;
-} */
 
 /* ELEMENT HIDER */
 

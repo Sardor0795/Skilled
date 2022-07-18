@@ -92,7 +92,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 28px;
-  background-image: url("../img/rectangle-hero.jpg");
+  background-image: url("../img/rectangle-bg.svg");
   background-repeat: no-repeat;
   background-position: left calc(50% + 605px) top -100px;
 }

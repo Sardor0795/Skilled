@@ -9,6 +9,18 @@
   --white: #ffffff;
   --gradient-1: linear-gradient(180deg, #ff6f48 0.04%, #f02aa6 100%);
   --gradient-2: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+  --gradient-1-hover: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  --gradient-2-hover: linear-gradient(
+      0deg,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
 }
 
 /* FONTS */
@@ -64,8 +76,7 @@ html {
 }
 
 *:focus {
-  outline: 2px dashed var(--main-color);
-  outline-offset: 3px;
+  outline: unset;
 }
 
 body {
@@ -105,10 +116,48 @@ button {
   display: inline-block;
 }
 
-button {
+/* BTNS */
+
+.btn {
   border: none;
   background: none;
   cursor: pointer;
+  padding: 14px 32px;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 28px;
+  transition: opacity 0.3s ease;
+}
+
+.btn:active {
+  opacity: 0.6;
+}
+
+.btn--black {
+  background-color: var(--black);
+}
+
+.btn--black:hover {
+  background-color: var(--blue);
+}
+
+.btn--gr-1 {
+  background-image: var(--gradient-1);
+}
+
+.btn--gr-1:hover {
+  background-image: var(--gradient-1-hover);
+}
+
+.btn--gr-2 {
+  background-image: var(--gradient-2);
+}
+
+.btn--gr-2:hover {
+  background-image: var(--gradient-2-hover);
 }
 
 /* CONTAINER */
@@ -133,6 +182,99 @@ button {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+/* HEADER */
+
+.header {
+  padding: 24px 0;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo__img {
+  width: 111px;
+  height: 27px;
+}
+
+/* HERO */
+
+.hero {
+  padding: 63px 0;
+}
+
+.hero__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero__content {
+  max-width: 457px;
+}
+
+.hero__title {
+  font-weight: 800;
+  font-size: 56px;
+  line-height: 71px;
+  color: var(--black);
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.hero__img-wrapper {
+  margin-right: 55px;
+  position: relative;
+}
+
+.hero__info {
+  background-color: var(--white);
+  display: inline-block;
+  padding: 20px 24px;
+  box-shadow: 0px 34px 54px rgba(6, 22, 141, 0.158854);
+  border-radius: 15px;
+}
+
+.info--member {
+  min-width: 155px;
+  position: absolute;
+  top: 103px;
+  right: -118px;
+}
+
+.info__text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  display: block;
+}
+
+.info__count {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 50px;
+  color: var(--black);
+}
+
+.info--course {
+  min-width: 199px;
+  position: absolute;
+  bottom: 98px;
+  left: -120px;
+}
+
+.hero__img {
+  background: linear-gradient(180deg, #ff6f48 0%, #f02aa6 100%);
+  border-radius: 158.5px;
 }
 
 /* MAIN CONTENT */

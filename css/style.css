@@ -346,10 +346,10 @@ button {
   line-height: 30px;
   color: var(--black);
   margin-bottom: 24px;
-  flex-grow: 1;
 }
 
 .cards-list__text {
+  flex-grow: 1;
   margin-top: 0;
   margin-bottom: 24px;
 }

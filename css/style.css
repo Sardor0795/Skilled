@@ -197,12 +197,12 @@ button {
 
 /* HEADER */
 
-.header {
+.site-header {
   padding: 24px 0;
 }
 
-.header__container,
-.footer__container {
+.site-header__container,
+.site-footer__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -383,7 +383,7 @@ button {
 
 /* FOOTER */
 
-.footer {
+.site-footer {
   background-color: var(--black);
   padding-top: 32px;
   padding-bottom: 32px;
